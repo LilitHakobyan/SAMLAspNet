@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.aspnetcore.authentication.openidconnect" Version="3.1.2" />
+    <PackageReference Include="microsoft.aspnetcore.mvc.razor.runtimecompilation" Version="3.1.2" Condition="'$(Configuration)' == 'Debug'"/>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="sustainsys.saml2.AspNetCore2" Version="2.4.0" />
+  </ItemGroup>
+
+
+
+</Project>

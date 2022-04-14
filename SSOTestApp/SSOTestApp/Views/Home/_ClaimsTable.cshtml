@@ -1,0 +1,23 @@
+﻿@model Microsoft.AspNetCore.Authentication.AuthenticateResult
+@{
+    Layout = "";
+}
+
+
+<table class="table table-striped text-left">
+    <thead>
+        <tr>
+            <th>Claim Type</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model.Principal.Claims)
+        {
+            <tr>
+                <td>@c.Type</td>
+                <td>@c.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>

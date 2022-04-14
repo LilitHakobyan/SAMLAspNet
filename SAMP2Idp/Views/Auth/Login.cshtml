@@ -1,0 +1,19 @@
+﻿@model LoginViewModel
+@{
+    ViewBag.Title = "Idp login Page";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+<div class="row">
+
+    <div class="col-md-12">
+        <p>
+            <form method="post">
+                Name: <input type=text name=name value="@Model.Name" />
+                <button type="submit" asp-action="Index" asp-controller="Auth" class="btn btn-danger">Login</button>
+            </form>
+        </p>
+    </div>
+</div>
